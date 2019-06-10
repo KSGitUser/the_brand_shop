@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Lato, sans-serif;
+  width: 1600px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+.header-main {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ececec;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+.flex-sb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-ai-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.a_cart img {
+  margin-top: 9px;
+}
+
+.a_cart:hover img {
+  opacity: 0.65;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+a:hover,
+input[type="button"]:hover,
+button:hover,
+input[type="submit"]:hover {
+  opacity: 0.65;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+a:focus {
+  border-left: 1px double #b65360;
+  border-right: 1px double #b65360;
+  outline: none;
+}
+
+a {
+  border-left: 1px double transparent;
+  border-right: 1px double transparent;
+  outline: none;
+}
+
+input[type="button"]:focus,
+button:focus,
+input[type="submit"]:focus {
+  outline: 1px solid #b65360;
+}
+
+a:not(:hover),
+input[type="button"]:not(:hover),
+button:not(:hover),
+input[type="submit"]:not(:hover) {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+@import "vars";
+@import "mixins";
+/*добавляем стилия для header*/
+@import "header";
+/*стили для навигации*/
+@import "navigation";
+/*стили footer*/
+@import "footer";
+/*стили для страницы index.htm*/
+@import "index_html";
+/*стили для страницы products*/
+@import "styles_for_products_html";
+/*стили для страницы single_page.html*/
+@import "single_page_html";
+/*стили для страницы shopping_cart.html*/
+@import "shopping_cart_html";
+/* стили для страницы checkout.html*/
+@import "checkout_html";

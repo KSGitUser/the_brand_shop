@@ -1,0 +1,135 @@
+/*стили footer*/
+
+/*следующие 4 стиля - чтобы footer был всегда в подвале*/
+
+html {
+  height: 100%;
+}
+
+.site {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1 0 auto;
+}
+
+.main-footer {
+  flex-shrink: 0;
+}
+
+.footer_menu {
+  padding-top: 109px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer_column1 {
+  width: 427px;
+}
+
+.footer_column1 > p:first-of-type {
+  padding-top: 29px;
+  padding-bottom: 38px;
+}
+
+.footer_column1 p {
+  color: #898989;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+.footer_h3 {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+  padding-bottom: 20px;
+}
+
+.footer_menu_ul {
+  list-style-type: none;
+}
+
+.footer_menu_ul a {
+  color: #898989;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 46px;
+  text-decoration: none;
+}
+
+.f_menu_link:hover {
+  color: #f16d7f;
+}
+
+.footer_bottom {
+  width: 100%;
+  height: 79px;
+  background-color: #e6e6e6;
+  margin-top: 89px;
+}
+
+.copyright p {
+  color: #7a7a7a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.4px;
+}
+
+.flex_footer_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.socialbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialbtn a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  margin-left: 8px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  color: #b2b2b2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+}
+
+.socialbtn a:visited {
+  background-color: #d9d7d7;
+}
+
+.socialbtn a:hover {
+  background-color: #f16d7f;
+  color: #fff;
+}

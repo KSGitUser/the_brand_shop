@@ -1,0 +1,304 @@
+.item_group {
+  width: 100%;
+  margin-top: 90px;
+}
+
+.item_img {
+  float: left;
+  /* display: flex; */
+  /*  flex: 0 0 100px; */
+  padding-right: 20px;
+  width: 100px;
+}
+
+thead {
+  color: #222222;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  tr {
+    border-bottom: 1px solid #eaeaea;
+  }
+}
+
+.item_table_details {
+  dt {
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+
+    color: #575757;
+    font-weight: 400;
+  }
+
+  dd {
+    color: #6f6e6e;
+    font-size: 13px;
+    font-weight: 300;
+  }
+}
+
+.flex_dl {
+  /*  display: flex; */
+}
+
+.dl_second_item,
+.dl_third_item {
+  margin-bottom: 20px;
+  margin-left: 120px;
+
+  dt {
+    margin-right: 10px;
+  }
+}
+
+.item_link {
+  padding-bottom: 30px;
+  padding-top: 15px;
+  margin-left: 120px;
+
+  a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: $pink-color;
+  }
+}
+
+.flex_item_table {
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.flex_cell {
+  flex: 2;
+}
+
+.flex_cell:first-of-type {
+  flex: 6;
+  text-align: left;
+}
+
+.flex_cell:last-of-type {
+  flex: 1;
+}
+
+.cell_flex_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #656565;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+
+  input {
+    width: 54px;
+    height: 30px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    text-align: center;
+    color: #656565;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  button {
+    background: none;
+    border: none;
+    outline: none;
+
+    :hover {
+      cursor: pointer;
+      color: $pink-color;
+    }
+
+    :focus {
+      outline: none;
+    }
+  }
+}
+
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  button {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 35px;
+    border: 1px solid #eaeaea;
+    background: none;
+  }
+
+  button:hover {
+    background-color: $pink-color70;
+    border: 1px solid $pink-color70;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+/* стили для формы shopping_cart.html*/
+
+.flex_form {
+  display: flex;
+  margin-bottom: 75px;
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+    padding-right: 35px;
+
+    h3 {
+      color: #222222;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      span {
+        color: $pink-color;
+      }
+    }
+
+    input,
+    select {
+      margin: 20px 0px 20px 0px;
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      color: #b1b1b1;
+      font-size: 13px;
+      font-weight: 300;
+      border: 1px solid #eaeaea;
+    }
+
+    input::placeholder {
+      color: #b1b1b1;
+    }
+
+    input:focus,
+    select:focus {
+      outline-color: $pink-color;
+    }
+
+    input:hover,
+    select:hover {
+      border: 1px solid #d6d6d6;
+    }
+
+    select:hover {
+      cursor: pointer;
+    }
+
+    button {
+      color: #4a4a4a;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 10px 15px;
+      background-color: #fff;
+      border: 1px solid #eaeaea;
+    }
+
+    button:hover {
+      background-color: $pink-color;
+      border: 1px solid $pink-color;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    label {
+      margin: 20px 0;
+    }
+  }
+
+  fieldset:last-of-type {
+    background-color: #f5f3f3;
+    padding: 40px;
+    align-self: flex-start;
+
+    /*     button {
+      padding: 20px 40px;
+      background-color: $pink-color;
+      border: none;
+      margin: 0 auto;
+      margin-top: 15px;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+    } */
+
+    a {
+      padding: 20px 40px;
+      background-color: $pink-color;
+      border: none;
+      margin: 0 auto;
+      margin-top: 15px;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      display: inline-table;
+    }
+
+    button:hover {
+      background-color: #ffffff;
+      color: $pink-color;
+      cursor: pointer;
+    }
+  }
+}
+
+/* убираем стрелки в номерном input*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form_text_container {
+
+  p,
+  h3 {
+    text-align: right;
+  }
+
+  p {
+    color: #4a4a4a;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  border-bottom: 1px solid #e2e2e2;
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}

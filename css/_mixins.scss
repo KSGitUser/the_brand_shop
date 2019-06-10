@@ -1,0 +1,15 @@
+@mixin menu-triangel($left-pos, $top-pos) {
+  &:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: $left-pos;
+    top: $top-pos;
+    z-index: 10;
+    border-top: 1px solid $borde-color-ed;
+    border-left: 1px solid $borde-color-ed;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+}

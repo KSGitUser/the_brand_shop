@@ -1,0 +1,52 @@
+/* начало стилий для breadcrumbs */
+
+.div_breadcrumbs {
+  height: 148px;
+  background-color: #f8f3f4;
+  margin-bottom: 59px;
+}
+
+.breadcrumbs_flex {
+  align-content: center;
+}
+
+.breadcrumbs_flex h2 {
+  color: $pink-color;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 20px;
+  text-transform: uppercase;
+  line-height: 138px;
+  display: block;
+}
+
+.ul_breadcrumbs {
+  /*  padding: 10px 16px; */
+  list-style: none;
+  color: $pink-color;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.ul_breadcrumbs li {
+  display: inline;
+  line-height: 138px;
+}
+
+.ul_breadcrumbs li + li:before {
+  /*  padding: 8px; */
+  color: #636363;
+  font-weight: 300;
+  content: "/\00a0";
+}
+
+.ul_breadcrumbs li a {
+  color: #636363;
+  text-decoration: none;
+}
+
+.ul_breadcrumbs li a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,251 @@
+/*стили для страницы Single_Page.html*/
+
+/*стили для слайдера страницы Single_Page.html*/
+
+.div_breadcrumbs {
+  margin-bottom: 0px; /*для этой страницы нужен 0 */
+}
+
+.slider_sing_page {
+  width: 100%;
+  height: 777px;
+  border: 1px solid #eaeaea;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.left_arrow_button,
+.right_arrow_button {
+  width: 47px;
+  height: 47px;
+  background-color: rgba(42, 42, 42, 0.212);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  line-height: 47px;
+  text-align: center;
+}
+
+.left_arrow_button:hover,
+.right_arrow_button:hover {
+  cursor: pointer;
+  color: #ef5b70;
+}
+/*стили для формы добавления в корзину страницы Page_Single.html*/
+
+.div_product_discription_relative {
+  position: relative;
+  height: 664px;
+}
+
+.div_product_discr_absolut {
+  position: absolute;
+  margin-top: -86px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  padding-top: 73px;
+  padding-bottom: 122px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.h3_product_discr {
+  color: $pink-color;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.divs_flex_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.three_divs div {
+  width: 42px;
+  height: 1px;
+  background-color: #eaeaea;
+}
+
+.three_divs div:nth-of-type(2) {
+  width: 63px;
+  height: 3px;
+  background-color: #ef5b70;
+}
+
+.div_product_discr_absolut h2 {
+  color: #4d4d4d;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 67px;
+}
+.p_product_container {
+  width: 54%;
+  margin-bottom: 28px;
+}
+
+.p_product_container p {
+  color: #5e5e5e;
+  font-size: 14px;
+  font-weight: 300;
+}
+.mat_designe_container span {
+  color: #b9b9b9;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mat_designe_container span.black_color_text {
+  color: #2f2f2f;
+}
+
+.mat_designe_container {
+  margin-bottom: 35px;
+}
+
+.span_m_d {
+  padding: 0 22px;
+}
+
+.price_number {
+  color: #ef5b70;
+  font-weight: 700;
+  padding-bottom: 43px;
+}
+
+.form_choose {
+  width: 642px;
+  border-top: 1px solid #eaeaea;
+  padding-top: 62px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_container_prod {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 28px;
+  padding: 0 27px;
+}
+
+.column_label {
+  display: flex;
+  flex-direction: column;
+  color: #2f2f2f;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.column_label select,
+.column_label input {
+  width: 144px;
+  height: 35px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-top: 15px;
+  box-sizing: border-box;
+  color: #bcbcbc;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0 15px;
+  outline: none;
+}
+
+.column_label select:hover,
+.column_label input:hover {
+  border: 1px solid #ef5b70;
+  cursor: pointer;
+}
+
+.column_label select:focus,
+.column_label input:focus {
+  outline: none;
+  border: 1px solid #ef5b70;
+}
+
+.button_submit_img {
+  width: 537px;
+  border: 1px solid #ef5b70;
+  background-color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 15px 35px;
+  color: #ef5b70;
+  font-size: 16px;
+  font-weight: 700;
+  background-image: url(../img/pink_cart.svg);
+  background-repeat: no-repeat;
+  background-position: 205px 12px;
+}
+
+.img_in_button {
+  margin-right: 15px;
+}
+
+.button_submit_img:hover {
+  background-color: #ef5b70;
+  color: #ffffff;
+  background-image: url(../img/white_cart.svg);
+  cursor: pointer;
+}
+
+/*стили для раздела you may like also Single_page.html*/
+
+.div_product_catalog {
+  padding-top: 120px;
+}
+
+.div_product_catalog h2 {
+  color: #4d4d4d;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#wrong_img {
+  width: 100%;
+  background-color: #efefef;
+}
+
+.img_f_item {
+  display: block;
+  margin: 0 auto;
+}
+
+/*стили для раздела new collection (video) single_page.html*/
+
+.div_new_collection h2 {
+  color: #4d4d4d;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.new_col_video {
+  margin-bottom: 80px;
+  width: 100%;
+}

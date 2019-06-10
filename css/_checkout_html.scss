@@ -1,0 +1,397 @@
+.list__h2 {
+  text-align: left;
+
+  &_font-style {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+  }
+
+  &_font-color {
+    color: #222222;
+  }
+}
+
+.ul-checkout_no-style {
+  list-style-type: none;
+}
+
+.list__form_flex-sb {
+  display: flex;
+
+  fieldset {
+    flex: 1;
+  }
+}
+
+.form-billing {
+  display: none;
+}
+
+.li-billing:hover .form-billing {
+  display: flex;
+}
+
+/* .ul-checkout__list:hover .list__form_flex-sb {
+  display: flex;
+} */
+
+.ul-checkout__list {
+  border-bottom: 1px solid #e8e8e8;
+
+  &_p-m {
+    padding: 33px 0;
+  }
+}
+
+.ul-checkout__list:hover {
+  cursor: default;
+}
+
+.form__fields {
+  border: none;
+
+  &_size {
+    width: 100%;
+    padding: 35px;
+  }
+}
+
+.fields-h3 {
+  text-align: left;
+
+  &_font-style {
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+  }
+
+  &_font-size {
+    color: #222222;
+  }
+
+  &_p-m {
+    padding: 15px 0;
+  }
+}
+
+.fields-p {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+  color: #b3b2b2;
+}
+
+/*делаем пользовательскую radio кнопку*/
+.radio-b-container {
+  display: inline-flex;
+  position: relative;
+  padding-left: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 14px;
+
+  &_text {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #222222;
+  }
+}
+
+/* прячем кнопку браузера */
+.radio-b-container__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* создаем свою кнопку */
+.radio-b-container__checkmark {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  height: 10px;
+  width: 10px;
+  background-color: #ffffff;
+  border: solid 2px #555555;
+  border-radius: 100%;
+}
+
+.radio-b-container__checkmark:after {
+  content: "";
+  position: absolute;
+  /*  display: none; */
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #000000;
+  border: 2px solid white;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.radio-b-container:hover .radio-b-container__checkmark {
+  background-color: #ccc;
+}
+
+.radio-b-container__input:checked~.radio-b-container__checkmark:after {
+  /*  display: block; */
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio-b-cover {
+  margin: 20px 0;
+}
+
+/*конец - создания кнопки*/
+
+.cover-a-fields {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.fields-a {
+  font-size: 13px;
+  line-height: 30px;
+  text-align: left;
+  color: #b3b2b2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $pink-color;
+    transition: color 0.2s ease;
+  }
+}
+
+.fields-a__font-aw {
+  padding-right: 2px;
+}
+
+.fields__label {
+  font-size: 12px;
+
+  text-align: left;
+  color: #222222;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.label__red-text {
+  font-size: 17px;
+  color: #ff0d0d;
+}
+
+.fields__input {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: solid 1px #eaeaea;
+  padding: 0 15px;
+  font-size: 13px;
+
+  &:focus {
+    outline: 1px solid $pink-color;
+  }
+}
+
+.fields__p {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+  display: inline-block;
+  margin: 20px 0 30px 0;
+
+  &_text-red {
+    color: #ff0d0d;
+  }
+}
+
+.fields-button-container_flex {
+  display: flex;
+  align-items: center;
+}
+
+.fields-a_text-color {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: #222222;
+}
+
+.fields-a_p-m {
+  margin-left: 30px;
+}
+
+.fields-button {
+  padding: 15px 15px;
+  min-width: 150px;
+  min-height: 20px;
+  background-color: #ffffff;
+  border: solid 1px #eaeaea;
+  transition: background0.3s ease;
+
+  &:hover {
+    background-color: $pink-color;
+    border: solid 1px $pink-color;
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+}
+
+.fields-button_p-m {
+  margin-top: 40px;
+}
+
+/* .fields-button_size_login {
+  padding-right: 79px;
+} */
+
+.fields__select {
+  box-sizing: border-box;
+  color: #b1b1b1;
+  min-width: 422px;
+}
+
+.fields__select:hover {
+  cursor: pointer;
+}
+
+option {
+  outline: none;
+  border: none;
+}
+
+.fields__input_last {
+  margin-bottom: 35px;
+}
+
+/* .fields-button_size_login {
+  padding-right: 71px;
+} */
+
+/*делаем checkbox адресс доставки такой */
+
+.input-custom-checkbox {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.fields__label-checkbox {
+  padding-left: 35px;
+  position: relative;
+  font-size: 14px;
+  color: #222222;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 24px;
+}
+
+.fields__label-checkbox:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: solid 1px #eaeaea;
+  display: block;
+}
+
+.fields__label-checkbox:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 7px;
+  height: 15px;
+  width: 8px;
+  transform: rotate(45deg);
+  border-right: solid 2px $pink-color;
+  border-bottom: solid 2px $pink-color;
+  display: none;
+}
+
+.input-custom-checkbox:checked~.fields__label-checkbox:after {
+  display: block;
+}
+
+.fields__input_zip-code {
+  width: 165px;
+  height: 15px;
+  background-color: #ffffff;
+  border: solid 1px #eaeaea;
+  padding: 15px;
+}
+
+.fields__table {
+  width: 100%;
+}
+
+.table-td,
+.table-th-center {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 15px 10px;
+}
+
+.table-th-center {
+  border-top: 1px solid #e8e8e8;
+}
+
+.table-th-center,
+.tabble-td-center {
+  text-align: center;
+}
+
+.radio-b-container_flex {
+  display: flex;
+  align-items: center;
+}
+
+.table-shipping-img_p-m {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 100px;
+  max-height: 70px;
+}
+
+.table-shipping__checkmark {
+  top: 43%;
+}
+
+/* .table-th_flex_center {
+  display: flex;
+  align-content: center;
+  align-items: center;
+} */
+
+.tabble-td_text {
+  font-size: 13px;
+  color: #222222;
+}
+
+.atricle-list-options {
+  margin-bottom: 90px;
+}
